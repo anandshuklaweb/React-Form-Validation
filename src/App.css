@@ -1,0 +1,37 @@
+.form-box {
+  margin: auto;
+  padding: 50px;
+  background: #ffffff;
+  border: 10px solid #f2f2f2;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+.valid-feedback {
+  color: red;
+  font-size: 14px;
+  padding-top: 5px;
+  display: none;
+}
+
+input:invalid[inputLeave="true"] ~ .valid-feedback {
+  display: block;
+}
+
+input:invalid[inputLeave="true"] {
+  border: 1px solid red;
+}
+
+.form-container {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
